@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AntiForget</string>
+    <string name="enable_bt">Enable Bluetooth for AntiforgetApp to work</string>
+    <string name="first_promt">Looks like you forgot something at home...</string>
+    <string name="secind_promt">Please check you staffs, it might be important!</string>
+    <string name="last_promt">Hold on, and go back home. You definitely forgot something!</string>
+
+    <string name="no_device_message">It\'s been %d seconds since we see your device.</string>
+</resources>
