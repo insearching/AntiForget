@@ -1,19 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.antiforget.antiforget.MainActivity">
+    android:padding="@dimen/vertical_padding"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/message"
-        android:layout_width="wrap_content"
+    <GridLayout
+        android:id="@+id/mock"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Scanning BLE..."
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="center"
+        android:columnCount="3"
+        android:orientation="horizontal">
 
-</android.support.constraint.ConstraintLayout>
+        <Button
+            android:id="@+id/start_search"
+            android:layout_gravity="fill"
+            android:text="Start search" />
+
+        <Button
+            android:id="@+id/start_alarm"
+            android:layout_gravity="fill"
+            android:text="Start alarm" />
+
+
+        <Button
+            android:id="@+id/no_device_mock"
+            android:layout_gravity="fill"
+            android:text="No device" />
+
+        <Button
+            android:id="@+id/stop_search"
+            android:layout_gravity="fill"
+            android:text="Stop search" />
+
+        <Button
+            android:id="@+id/stop_alarm"
+            android:layout_gravity="fill"
+            android:text="Stop alarm" />
+
+        <Button
+            android:id="@+id/clear_mock"
+            android:layout_gravity="fill"
+            android:text="Clear" />
+
+        <Button android:id="@+id/search_interval"
+            android:layout_gravity="fill"
+            android:text="Search interval"/>
+
+        <Button android:id="@+id/clear_interval"
+            android:layout_gravity="fill"
+            android:text="Clear interval"/>
+    </GridLayout>
+
+    <com.jraska.console.Console
+        android:id="@+id/console"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:text="Console text here" />
+
+</LinearLayout>

@@ -42,5 +42,9 @@ dependencies {
     compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
     compile 'io.reactivex.rxjava2:rxjava:2.0.1'
     compile 'joda-time:joda-time:2.9.9'
+    compile 'com.jraska:console:0.4.3'
+    compile 'com.jakewharton:butterknife:8.6.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
     testCompile 'junit:junit:4.12'
+    compile 'com.android.support:gridlayout-v7:25.1.0'
 }

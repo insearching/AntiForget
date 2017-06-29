@@ -5,12 +5,10 @@ import com.antiforget.antiforget.MainActivity;
 
 import dagger.Component;
 
-/**
- * Created by insearching on 5/18/17.
- */
-
-@Component(modules = {BLEModule.class})
+@Component(modules = BLEModule.class)
+@AppScope
 public interface AntiForgetComponent {
-    void inject (MainActivity activity);
-    void inject (BLESearchService service);
+    void inject(MainActivity activity);
+
+    void inject(BLESearchService service);
 }

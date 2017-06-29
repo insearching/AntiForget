@@ -12,6 +12,9 @@ import timber.log.Timber;
 public class AntiForgetApplication extends Application {
 
     AntiForgetComponent component;
+
+    public static final String BLE_MAC = "5C:F8:21:DD:CE:41";
+
     @Override
     public void onCreate() {
         super.onCreate();
@@ -20,8 +23,9 @@ public class AntiForgetApplication extends Application {
                 .build();
 
         Timber.plant(new Timber.DebugTree());
-    }
 
+        Timber.plant(new LogTree());
+    }
     protected AntiForgetComponent getAppComponent() {
         return component;
     }
